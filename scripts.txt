@@ -1,0 +1,19 @@
+Para ejecutar programa
+
+1. /** solo ejecutar archivo.mzn -> sin incluir archivos .dzn*/
+
+ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn
+
+C:\Program Files\MiniZinc .\minizinc Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn
+
+===================================================================
+2. Para ejecuar: 
+
+ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn + ruta-archivo.dzn 
+
+C:\Program Files\MiniZinc> .\minizinc \Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn  \Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\DatosCalDep.dzn
+
+===================================================================
+3. /** solo para ejecutar archivo.fzn */
+
+PS C:\Program Files\MiniZinc> .\minizinc C:\Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.fzn
