@@ -1,10 +1,10 @@
-Para ejecutar programa
+Para ejecutar programa en windows powershell
 
 1. /** solo ejecutar archivo.mzn -> sin incluir archivos .dzn*/
 
 ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn
 
-C:\Program Files\MiniZinc .\minizinc Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn
+C:\'Program Files'\MiniZinc .\minizinc Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn
 
 ===================================================================
 2. Para ejecuar: 
