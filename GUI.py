@@ -128,7 +128,7 @@ le5.grid(column=0, row=10)
 
 # Create text widget and specify size.
 TextArea2 = tk.Text(raiz, height = 5, width = 30)
-TextArea2.grid(column=0, row=11)
+TextArea2.grid(column=1, row=10)
 
 Fact = m
  
@@ -148,7 +148,19 @@ pn = [[ 1, 0, 1, 0],
 
 utilidad = 7222
  
+ # Create label
+le5 = Label(raiz, text = "Utilidad:")
+le5.config(font =("Courier", tamLetra)) 
+le5.grid(column=0, row=11)
+
+# Create label
+le5 = Label(raiz, text = utilidad)
+le5.config(font =("Courier", tamLetra)) 
+le5.grid(column=1, row=11)
+
+
 # Insert The Fact.
 TextArea1.insert(tk.END, Fact)
+TextArea2.insert(tk.END, s)
 
 raiz.mainloop()
