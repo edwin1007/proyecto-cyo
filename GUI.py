@@ -103,30 +103,34 @@ lmax.config(font =("Courier", tamLetra))
 lmax.grid(column=0, row=7)
 
 # Create text widget and specify size.
-TextArea1 = tk.Text(raiz, height = 5, width = 52)
+TextArea1 = tk.Text(raiz, height = 5, width = 30)
 TextArea1.grid(column=1, row=7)
 
+# Create label
+le3 = Label(raiz, text = "")
+le3.config(font =("Courier", tamLetra)) 
+le3.grid(column=0, row=8)
+
+# Create label
+le4 = Label(raiz, text = "")
+le4.config(font =("Courier", tamLetra)) 
+le4.grid(column=1, row=8)
 
 # Create an Exit button.
 #b2 = ttk.Button(raiz, text = "Exit", command = raiz.destroy)
 b2 = ttk.Button(raiz, text = "Calcular calendario deportivo")
-b2.grid(column=0, row=8)
+b2.grid(column=0, row=9)
 
-
+# Create label
+le5 = Label(raiz, text = "Calendario de salida")
+le5.config(font =("Courier", tamLetra)) 
+le5.grid(column=0, row=10)
 
 # Create text widget and specify size.
-TextArea2 = tk.Text(raiz, height = 5, width = 52)
-TextArea2.grid(column=0, row=9)
+TextArea2 = tk.Text(raiz, height = 5, width = 30)
+TextArea2.grid(column=0, row=11)
 
 Fact = m
-
-''' 
-l.pack()
-TextArea1.pack()
-b1.pack()
-b2.pack()
-TextArea2.pack() 
-'''
  
 # Insert The Fact.
 TextArea1.insert(tk.END, Fact)
