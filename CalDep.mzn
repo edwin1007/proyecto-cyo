@@ -21,6 +21,8 @@ constraint forall(i in 1..m)(let {var int: positivos = count(j in 1..n)(s[i,j] >
                                   in positivos = negativos); % tener la misma cantidad de positivos y negativos en cada fila
 constraint forall(i in 1..m, j in 1..n) (if s[i,j] > 0 then s[i, s[i, j]] = -j endif); % genera los cruces para que un equipo sea visitante y el otro local
 constraint forall(i in 1..m, j in 1..n) (pn[i, j] = if s[i, j] > 0 then 0 else 1 endif); % se crea la matrix que identifica donde hay numeros positivos y negativos 
+constraint forall(j in 1..n) (forall(i in 1..m-Max) (let {var int: condicion = count(k in 1..Max)(pn[i,j] != pn[i+k,j])} 
+                                                     in condicion >= 1)); % maximo de las giras y permanencias
 constraint utilidad = sum(i in 1..n) (sum(j in 1..m) (if pn[j, i] == 1 then 
                                                                       if j == 1 then D[abs(s[j, i]), i]
                                                                       else
@@ -35,9 +37,7 @@ constraint utilidad = sum(i in 1..n) (sum(j in 1..m) (if pn[j, i] == 1 then
                                                       endif
                                                  endif + if pn[j, i] == 1 /\ j == m then D[i, abs(s[j, i])] 
                                                          else 0 endif));% funcion objetivo  
-constraint forall(i in 1..n, j in 1..m) (
-    Min <= count(k in j..m) (pn[k,i] == pn[j,i]) /\ count(k in j..m) (pn[k,i] == pn[j,i]) <= Max
-); % minimo y maximo de las giras y permanencias
+
                         
 %constraint utilidad = sum(i in 1..n, j in 1..m) (c[j,i]);
 

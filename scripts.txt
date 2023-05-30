@@ -4,7 +4,7 @@ Para ejecutar programa en windows powershell
 
 ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn
 
-C:\'Program Files'\MiniZinc .\minizinc Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn
+C:\'Program Files'\MiniZinc .\minizinc \Users\'EDWIN ACER'\Desktop\proyecto-cyo\CalDep.mzn
 
 ===================================================================
 2. Para ejecuar: 
