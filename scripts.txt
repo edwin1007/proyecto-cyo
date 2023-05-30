@@ -17,6 +17,8 @@ C:\Program Files\MiniZinc> .\minizinc \Users\'EDWIN ACER'\Desktop\Ejemplo-minizi
 ===================================================================
 2. Para ejecuar archivo .mzn + archivo .dzn con compilador (chuffed, gecode...):  
 
+ruta-minizinc.exe + .\minizinc + -c --solver + (compilador) ruta-archivo.mzn + ruta-archivo.dzn 
+
 C:\Program Files\MiniZinc> .\minizinc -c --solver chuffed Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn  
 \Users\'EDWIN ACER'\Desktop\proyecto-cyo\DatosCalDep.dzn
 
@@ -24,3 +26,7 @@ C:\Program Files\MiniZinc> .\minizinc -c --solver chuffed Users\'EDWIN ACER'\Des
 3. /** solo para ejecutar archivo.fzn */
 
 PS C:\Program Files\MiniZinc> .\minizinc C:\Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.fzn
+
+===================================================================
+4. /** para ejecutar las demas instancias de deben cambiar los datos por los que estan contenidos 
+    en el archivo otras-instancias.txt */
