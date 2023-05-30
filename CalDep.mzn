@@ -1,13 +1,10 @@
 include "alldifferent.mzn";
 
-int: n = 4;
+int: n;
+int: Min;
+int: Max;
 int: m = 2*(n-1);
-int: Min = 1;
-int: Max = 3;
-array[1..n, 1..n] of var int: D = [|  0, 745, 665, 929 |
-                                    745,   0,  80, 337 |
-                                    665,  80,   0, 380 |
-                                    929, 337, 380,   0 |];
+array[1..n, 1..n] of var int: D;
 array[1..m, 1..n] of var int: s; % solucion
 array[1..m, 1..n] of var int: pn; % positivos y negativos
 var int: utilidad;

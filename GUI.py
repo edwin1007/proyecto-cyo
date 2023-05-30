@@ -131,22 +131,25 @@ TextArea2 = tk.Text(raiz, height = 5, width = 30)
 TextArea2.grid(column=1, row=10)
 
 Fact = m
- 
-s = [[ -2,  1, -4,  3],
-    [ -4,  3, -2,  1],
+
+# matrices de salida de calendario y utilidad.  
+
+s = [[-4,  3, -2,  1],
+    [ -2,  1, -4,  3],
     [ -3, -4,  1,  2],
     [  2, -1,  4, -3],
     [  4, -3,  2, -1],
-    [  3,  4, -1, -2]]
+    [  3,  4, -1, -2]];
+s = np.matrix(s)
 
-pn = [[ 1, 0, 1, 0],
+pn = [[1, 0, 1, 0],
      [1, 0, 1, 0],
      [1, 1, 0, 0],
      [0, 1, 0, 1],
-     [0, 1, 0, 1],
+     [0, 1, 0, 1], 
      [0, 0, 1, 1]];
 
-utilidad = 7222
+utilidad = 8276;
  
  # Create label
 le5 = Label(raiz, text = "Utilidad:")

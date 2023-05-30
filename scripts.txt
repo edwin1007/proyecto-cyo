@@ -7,11 +7,18 @@ ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn
 C:\'Program Files'\MiniZinc .\minizinc \Users\'EDWIN ACER'\Desktop\proyecto-cyo\CalDep.mzn
 
 ===================================================================
-2. Para ejecuar: 
+2. Para ejecuar archivo .mzn + archivo .dzn:  
 
 ruta-minizinc.exe + .\minizinc + ruta-archivo.mzn + ruta-archivo.dzn 
 
-C:\Program Files\MiniZinc> .\minizinc \Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn  \Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\DatosCalDep.dzn
+C:\Program Files\MiniZinc> .\minizinc \Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn  
+\Users\'EDWIN ACER'\Desktop\proyecto-cyo\DatosCalDep.dzn
+
+===================================================================
+2. Para ejecuar archivo .mzn + archivo .dzn con compilador (chuffed, gecode...):  
+
+C:\Program Files\MiniZinc> .\minizinc -c --solver chuffed Users\'EDWIN ACER'\Desktop\Ejemplo-minizinc\CalDep.mzn  
+\Users\'EDWIN ACER'\Desktop\proyecto-cyo\DatosCalDep.dzn
 
 ===================================================================
 3. /** solo para ejecutar archivo.fzn */
